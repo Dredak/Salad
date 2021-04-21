@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 59px);
+  padding: 30px;
+}
+
+.app-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #181e24;
+}
+
+.MuiFormControl-root {
+  .MuiFormLabel-root {
+    color: #181e24;
+  }
+
+  .MuiInput-underline::before {
+    border-bottom: 2px solid #181e24;
+  }
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid rgb(194, 194, 194);
+  }
+
+  .WAMuiChipInput-underline-14:before {
+    border-bottom: 2px solid #181e24;
+  }
+
+  .WAMuiChipInput-underline-14:after {
+    border-bottom: 2px solid #5d7de2;
+  }
+
+  .WAMuiChipInput-underline-14:hover:not(.WAMuiChipInput-disabled-13):before {
+    border-bottom: 2px solid rgb(194, 194, 194);
+  }
+  .MuiInput-input {
+    color: #181e24;
+  }
+}
+
+.placeholder-text {
+  margin: auto;
+}

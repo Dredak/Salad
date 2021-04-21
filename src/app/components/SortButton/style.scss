@@ -1,0 +1,17 @@
+.sort-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #5d7de2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

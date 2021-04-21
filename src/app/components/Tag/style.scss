@@ -1,0 +1,29 @@
+.tag {
+  padding: 5px 10px;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.interactive-tag {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ececec;
+  }
+  &:focus {
+    outline: none;
+    background-color: #5d7ce288;
+  }
+}
+
+.interactive-tag-selected {
+  background-color: #5d7de2;
+  color: white;
+
+  &:focus {
+    background-color: #5d7de2;
+  }
+}

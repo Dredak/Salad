@@ -1,0 +1,120 @@
+.interactive-card {
+  display: flex;
+  border: 0.5px solid #dbdbdb;
+  overflow: hidden;
+  margin: 15px 10px;
+  transition: 0.5s all;
+  user-select: none;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-2px);
+    border: 1px solid #5d7de2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:first-child {
+    margin-top: 4px;
+  }
+  &:last-child {
+    margin-bottom: 3px;
+  }
+
+  .card-content-wrapper {
+    width: calc(100% - 80px);
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  .ingredient-image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .calories {
+    margin-left: 20px;
+  }
+
+  .tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5px 0px;
+    padding-right: 10px;
+  }
+
+  .edit-button {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-right: 5px;
+  }
+
+  .delete-button {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}
+.resource-info {
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  top: 50%;
+  padding: 10px;
+  color: white;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px);
+  background-color: rgba(30, 143, 255, 0.199);
+  border-bottom: 1px solid hsla(226, 70%, 63%, 0.2);
+  border-right: 1px solid hsla(226, 70%, 63%, 0.2);
+  filter: drop-shadow(2px 2px 4px #000);
+
+  .info-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .info-icon {
+    color: white;
+    font-size: 30px;
+  }
+
+  .info-details {
+    margin-left: 10px;
+  }
+
+  .info-data {
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+.edit-form {
+  width: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}

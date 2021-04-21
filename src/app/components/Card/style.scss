@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #5d7de2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .info-wrapper {
+    padding-bottom: 2px;
+  }
+
+  .image-wrapper {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+  }
+
+  .image {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .text-wrapper {
+    width: 100%;
+  }
+
+  .tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

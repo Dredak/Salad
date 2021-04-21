@@ -1,0 +1,33 @@
+.salads-page-wrapper {
+  margin: 0 auto;
+  padding: 5% 0px;
+  width: 50%;
+  height: 100%;
+
+  @media only screen and (max-width: 1000px) {
+    width: 80%;
+  }
+
+  .sorter-outer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0px 11px;
+  }
+
+  .sort-inner-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .cards-wrapper {
+    height: calc(100% - 20px);
+    overflow-y: auto;
+  }
+}
+
+.salads-page-loader {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+}

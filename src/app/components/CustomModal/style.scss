@@ -1,0 +1,31 @@
+.Modal {
+  max-width: 6000px !important;
+  .MuiPaper-root {
+    border-radius: 0;
+    .MuiDialogTitle-root {
+      padding: 10px 10px 10px 24px;
+    }
+    .Modal-title {
+      > h2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        > p {
+          font-size: 18px;
+          color: rgba(0, 0, 0, 0.54);
+        }
+      }
+      .button-root {
+        justify-self: flex-end;
+      }
+    }
+    .MuiDialogContent-root {
+      min-width: 250px;
+      min-height: 100px;
+      .MuiTypography-root {
+        font-weight: 300;
+      }
+    }
+  }
+}
